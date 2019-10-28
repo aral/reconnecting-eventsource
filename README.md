@@ -1,5 +1,27 @@
 # ReconnectingEventSource
 
+---
+
+## This is a fork.
+
+This is a fork of [reconnecting-eventsource] by Benjamin Goering. We are using it internally for [Site.js](https://sitejs.org) via [our fork of sendevent](https://github.com/aral/sendevent/).
+
+### What’s different?
+
+It fixes the following issues:
+
+  - [#17](https://github.com/fanout/reconnecting-eventsource/issues/17): Cannot read property max_retry_time of undefined when configuration object undefined
+  - [#18](https://github.com/fanout/reconnecting-eventsource/issues/18): 207 high-priority vulnerabilities on npm install
+  - [#19](https://github.com/fanout/reconnecting-eventsource/issues/19): npm test fails
+
+I’ve issued [a combined upstream pull request](https://github.com/fanout/reconnecting-eventsource/pull/20) and we will be using this fork until that’s merged (if it is).
+
+Thank you for your lovely work, Benjamin.
+
+__Original readme follows:__
+
+---
+
 This is a small wrapper library around the [JavaScript EventSource API](https://www.w3.org/TR/eventsource/) to ensure it maintains a connection to the server. Normally, `EventSource` will reconnect on its own, however there are some cases where it may not. This library ensures a reconnect always happens.
 
 To use it, just replace:

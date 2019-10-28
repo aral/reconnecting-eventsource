@@ -1,7 +1,7 @@
 {
-  "name": "reconnecting-eventsource",
-  "version": "1.0.3",
-  "description": "wrapper library around the JavaScript EventSource API to ensure it maintains a connection to the server.",
+  "name": "@small-tech/reconnecting-eventsource",
+  "version": "1.0.0",
+  "description": "Fork of reconnecting-eventsource: wrapper library around the JavaScript EventSource API to ensure it maintains a connection to the server.",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib dist",
@@ -16,14 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fanout/reconnecting-eventsource.git"
+    "url": "git+https://github.com/aral/reconnecting-eventsource.git"
   },
   "author": "Fanout, Inc. <info@fanout.io>",
   "license": "MIT",
   "contributors": [
     {
       "name": "Katsuyuki Ohmuro",
-      "email": "harmony7@pex2.jp"
+      "email": "harmony7@pex2.jp",
+      "name": "Aral Balkan",
+      "email": "mail@ar.al"
     }
   ],
   "keywords": [
@@ -34,9 +36,9 @@
     "push"
   ],
   "bugs": {
-    "url": "https://github.com/fanout/reconnecting-eventsource/issues"
+    "url": "https://github.com/aral/reconnecting-eventsource/issues"
   },
-  "homepage": "https://github.com/fanout/reconnecting-eventsource#readme",
+  "homepage": "https://github.com/aral/reconnecting-eventsource#readme",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
